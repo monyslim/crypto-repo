@@ -21,40 +21,40 @@ SHA-256 (Secure Hash Algorithm 256-bit) is part of the **SHA-2** family and is w
 
 1. Importing the Library:
 
-```import hashlib```
+<pre> ```python import hashlib ``` </pre>
 *The hashlib library provides common hashing algorithms like MD5, SHA-1, and SHA-256.*
 
 ### SHA-256 is being used because it’s secure and collision-resistant.
 
 2. Function Definition:
 
-```def simple_hash(data):```
+<pre> ```python def simple_hash(data):``` </pre>
 *This function takes a single input, data, which is a string.*
 
 3. Encoding the String:
 
-```data_bytes = data.encode()```
+<pre>```python data_bytes = data.encode()``` </pre>
 *Hash functions in Python operate on bytes, not strings.*
 
 ### The **encode()** method converts the string into a bytes object.
 
 4. Creating the Hash Object:
 
-```hash_object = hashlib.sha256(data_bytes)``
+<pre>```python hash_object = hashlib.sha256(data_bytes)``` </pre>
 - *We use **hashlib.sha256()** to create a new hash object.*
 
 - The input bytes are passed to this function to generate the hash.
 
 5. Getting the Hash Hexadecimal:
 
-```hash_hex = hash_object.hexdigest()```
+<pre>```python hash_hex = hash_object.hexdigest()``` </pre>
 **hexdigest()** returns the hash as a hexadecimal string.
 
 - A SHA-256 hash is 256 bits or 64 hexadecimal characters long.
 
 6. Returning the Hash:
 
-```return hash_hex```
+<pre>```python return hash_hex``` </pre>
 - The function returns the resulting hash.
 
 #### Example Demonstration:
